@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 0
   m_BoneTransforms:
   - {fileID: 759167946435983681}
@@ -217,8 +217,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 759167946413664341}
   m_Layer: 0
   m_Name: Mary
-  m_TagString: Untagged
+  m_TagString: Mary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 0
   m_BoneTransforms:
   - {fileID: 759167947691882178}
@@ -488,8 +488,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 1
   m_BoneTransforms:
   - {fileID: 759167948003730562}
@@ -704,8 +704,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 1
   serializedVersion: 2
   m_Quality: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 0
   m_BoneTransforms:
   - {fileID: 759167947591998146}
@@ -808,8 +808,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 0
   m_BoneTransforms:
   - {fileID: 759167946523321317}
@@ -960,8 +960,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 2
   m_BoneTransforms:
   - {fileID: 759167947781596131}
@@ -1193,8 +1193,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 2
   serializedVersion: 2
   m_Quality: 0
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1686406135
   m_SortingOrder: 3
   m_BoneTransforms:
   - {fileID: 759167946523321317}
@@ -1915,8 +1915,8 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1686406135
+  m_SortingLayer: 2
   m_SortingOrder: 3
   serializedVersion: 2
   m_Quality: 0
