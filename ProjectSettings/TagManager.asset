@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Mary
+  - Medlock
+  - Ben
+  - Martha
+  - Item
+  - Background
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1080330899
+    locked: 0
+  - name: Character
+    uniqueID: 1686406135
+    locked: 0
+  - name: Item
+    uniqueID: 1594035459
+    locked: 0
+  - name: Interaction
+    uniqueID: 3767719793
+    locked: 0
+  - name: Dialogue
+    uniqueID: 3502937023
+    locked: 0
