@@ -126,7 +126,6 @@ public class EventDialogueSystem : MonoBehaviour
         else // 한글자 출력이 완료되었으면
         {
             txt.text = text;
-            print("출력이 끝났습니다");
         }
     }
 
