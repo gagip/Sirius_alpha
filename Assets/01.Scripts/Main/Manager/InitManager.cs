@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
-
 /// <summary>
 /// 게임 ㄴ
 /// </summary>
+/// 
+
 public class InitManager : MonoBehaviour
 {
-
-    public void gameStart()
+    public GameObject creditCanvas;
+    public void GameStart()
     {
         //ShowRewardedAd();
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Intro1");
         Time.timeScale = 1;
     }
 
-    public void gameExit()
+
+    public void GameExit()
     {
         Application.Quit();
     }
@@ -26,6 +28,16 @@ public class InitManager : MonoBehaviour
     {
         Screen.SetResolution(1920, 1200, true);
         //Advertisement.Initialize("2878145", false);
+    }
+
+    public void ShowCredit()
+    {
+        creditCanvas.SetActive(true);
+    }
+
+    public void HideCredit()
+    {
+        creditCanvas.SetActive(false);
     }
 
     //private void ShowRewardedAd()
