@@ -9,6 +9,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/Assets/04.Prefabs/gagip/
+/Assets/02.Scenes/TestScene/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
