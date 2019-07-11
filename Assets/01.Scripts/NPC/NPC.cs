@@ -48,9 +48,43 @@ public class NPC : MonoBehaviour
         targetpos.x = initpos.x + dist;
         animator = gameObject.GetComponent<Animator>(); // animator component를 받아옴
 
-        if (isMoving)
+        if (isMoving)   // 움직이는 NPC의 경우 움직이도록 초기화
         {
-            animator.SetBool("isWalking", true);
+            animator.SetBool("isIdle", false);
+        }
+        else
+        {
+            animator.SetBool("isIdle", true);
+        }
+    }
+
+    private void Walk()
+    {
+        if (animator.GetBool("isIdle"))     // 멈춘 애니메이션이면 움직이도록 설정
+        {
+            animator.SetBool("isIdle", false);
+        }
+
+        float targetDis = targetpos.x - transform.position.x; // 타겟까지의 남은 거리
+        float initDis = transform.position.x - initpos.x; // 시작 위치부터의 현위치까지의 거리
+        if (targetDis < 0 || initDis < 0)  // 원위치-타켓위치 범위를 벗어나면 방향을 바꿈
+        {
+            if (direct)
+            {
+                direct = false;
+            }
+            else
+            {
+                direct = true;
+            }
+        }
+        if (direct)
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
     }
 
@@ -59,31 +93,18 @@ public class NPC : MonoBehaviour
     {
         if (isMoving)
         {
-            if (EventSystem.current.IsPointerOverGameObject() == true) return; // UI창 나오면 안움직임
-
-
-            float targetDis = targetpos.x - transform.position.x; // 타겟까지의 남은 거리
-            float initDis = transform.position.x - initpos.x; // 시작 위치부터의 현위치까지의 거리
-            if (targetDis < 0 || initDis < 0)  // 원위치-타켓위치 범위를 벗어나면 방향을 바꿈
+            if (EventSystem.current.IsPointerOverGameObject() == true)
             {
-                if (direct)
+                if (!animator.GetBool("isIdle"))     // 멈춘 애니메이션이면 움직이도록 설정
                 {
-                    direct = false;
+                    animator.SetBool("isIdle", true);
                 }
-                else
-                {
-                    direct = true;
-                }
-            }
-            if (direct)
-            {
-                transform.Translate(Vector3.right * speed * Time.deltaTime);
-            }
-            else
-            {
-                transform.Translate(Vector3.left * speed * Time.deltaTime);
-            }
+                return;
+            }// UI창 나오면 안움직임
+
+            Walk();
         }
+        
 
     }
 
