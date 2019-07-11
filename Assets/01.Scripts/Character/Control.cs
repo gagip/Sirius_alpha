@@ -23,6 +23,8 @@ public class Control : MonoBehaviour
     private float rightButtonSec;
     private float leftButtonSec;
 
+    private AudioManager theAudio;  //사운드 재생
+    private bool isPlaying;         // 발자국 소리가 재생중인지
     private Animator animator;   // 애니메이션 동작을 위한 선언  
     private GameObject dialoguePanel;   // 대화 UI 가 실행중인지 파악하기 위한 변수(setActive 사용해 구별)
 
@@ -48,6 +50,8 @@ public class Control : MonoBehaviour
         float screenWidth = Screen.width;   // 스크린 넓이
 
         animator = gameObject.GetComponent<Animator>(); // 메리의 animator component를 받아옴
+        theAudio = FindObjectOfType<AudioManager>();    // 사운드 매니저
+        isPlaying = false;  
         dialoguePanel = GameObject.Find("Dialogue UI").transform.Find("Dialogue Panel").gameObject; // 대화 패널 오브젝트를 받아옴
 
         halfWidth = (characterBox.size.x) / 2f;
@@ -60,25 +64,33 @@ public class Control : MonoBehaviour
         characterBox = gameObject.GetComponent<BoxCollider2D>();
         boundBox = GameObject.FindGameObjectWithTag("Background").GetComponent<BoxCollider2D>();
     }
-
-    // UI 위를 클릭시 이동 금지
-    private bool IsPointerOverUIObject()
+    
+    private void Walk()
     {
-        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-        return results.Count > 0;
+        animator.SetBool("isWalking", true);    // 움직이는 동안 walk 상태 애니메이션
+        if (!isPlaying)
+        {
+            isPlaying = true;
+            theAudio.Play("walkingHouse");  // sound on
+        }  
+    }
+
+    private void Stop()
+    {
+        animator.SetBool("isWalking", false);   // 움직이지 않는 동안 idle 상태 애니메이션
+        if (isPlaying)
+        {
+            isPlaying = false;
+            theAudio.Stop("walkingHouse");  // sound on
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (EventSystem.current.IsPointerOverGameObject() == true) return; // UI창 나오면 클릭 금지
-        //if (IsPointerOverUIObject()) return; // UI창 나오면 클릭 금지
         if (dialoguePanel.activeSelf)
         {
-            animator.SetBool("isWalking", false);   // 움직이지 않는 동안 idle 상태 애니메이션
+            Stop();
             return;
         }
 
@@ -90,7 +102,7 @@ public class Control : MonoBehaviour
         }
         if (moveit)
         {
-            animator.SetBool("isWalking", true);    // 움직이는 동안 walk 상태 애니메이션
+            Walk();
             float dis = targetpos.x - transform.position.x; // 마우스 좌표 - 현재 캐릭터 좌표
             if (Mathf.Abs(dis) <= error)
             {
@@ -109,7 +121,7 @@ public class Control : MonoBehaviour
         }
         else
         {
-            animator.SetBool("isWalking", false);   // 움직이지 않는 동안 idle 상태 애니메이션
+            Stop();
         }
     }
 }
