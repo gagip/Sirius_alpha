@@ -314,6 +314,8 @@ GameObject:
   - component: {fileID: 6233886183842777693}
   - component: {fileID: 6233886183842777682}
   - component: {fileID: 2952117568496577747}
+  - component: {fileID: 4104208801008391171}
+  - component: {fileID: 6776360985279876841}
   m_Layer: 0
   m_Name: Medlock
   m_TagString: Medlock
@@ -383,6 +385,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4104208801008391171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6233886183842777692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ce429acd1773458355d203e5dd738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtFile: scene1
+  setTextPosition: 0
+  dialogueTextPosion:
+    txtPlayer: {x: -150, y: 500, z: 0}
+    txtNPC: {x: 150, y: 500, z: 0}
+--- !u!114 &6776360985279876841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6233886183842777692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6576833a89c6746469cad8287c5ace60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWathcing: 1
+  isMoving: 0
+  speed: 3
+  dist: 5
 --- !u!1 &6233886183975293688
 GameObject:
   m_ObjectHideFlags: 0

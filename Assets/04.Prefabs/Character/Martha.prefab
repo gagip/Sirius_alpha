@@ -1008,6 +1008,8 @@ GameObject:
   - component: {fileID: 2485782424133712016}
   - component: {fileID: 2485782424133712019}
   - component: {fileID: 8953815553789842685}
+  - component: {fileID: 9088358489690044927}
+  - component: {fileID: 6474622135444042047}
   m_Layer: 0
   m_Name: Martha
   m_TagString: Martha
@@ -1078,6 +1080,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &9088358489690044927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485782424133712018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ce429acd1773458355d203e5dd738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtFile: scene1
+  setTextPosition: 0
+  dialogueTextPosion:
+    txtPlayer: {x: -150, y: 500, z: 0}
+    txtNPC: {x: 150, y: 500, z: 0}
+--- !u!114 &6474622135444042047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485782424133712018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6576833a89c6746469cad8287c5ace60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWathcing: 1
+  isMoving: 0
+  speed: 3
+  dist: 5
 --- !u!1 &2485782424173596200
 GameObject:
   m_ObjectHideFlags: 0

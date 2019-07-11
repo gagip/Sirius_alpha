@@ -1481,6 +1481,8 @@ GameObject:
   - component: {fileID: 8688972504610238882}
   - component: {fileID: 8688972504610238881}
   - component: {fileID: 491545579572015490}
+  - component: {fileID: 5814537594427710370}
+  - component: {fileID: 1189492533445587094}
   m_Layer: 0
   m_Name: Ben
   m_TagString: Ben
@@ -1552,6 +1554,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5814537594427710370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688972504610238880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ce429acd1773458355d203e5dd738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtFile: scene1
+  setTextPosition: 0
+  dialogueTextPosion:
+    txtPlayer: {x: -150, y: 500, z: 0}
+    txtNPC: {x: 150, y: 500, z: 0}
+--- !u!114 &1189492533445587094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688972504610238880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6576833a89c6746469cad8287c5ace60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWathcing: 0
+  isMoving: 1
+  speed: 3
+  dist: 5
 --- !u!1 &8688972504730815507
 GameObject:
   m_ObjectHideFlags: 0
