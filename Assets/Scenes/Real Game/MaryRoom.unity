@@ -143,9 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840ca430e9ac6264eacd41b01df3615d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 3
-  boundBox: {fileID: 2085264328}
 --- !u!81 &412530665
 AudioListener:
   m_ObjectHideFlags: 0
@@ -204,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412530663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: -10}
+  m_LocalPosition: {x: 11.7, y: 3.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -276,12 +273,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2085264328 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8761441065139798153, guid: 29b33964c5e6248da837d90000e6c374,
-    type: 3}
-  m_PrefabInstance: {fileID: 8761441066955512641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8761441066955512641
 PrefabInstance:
   m_ObjectHideFlags: 0

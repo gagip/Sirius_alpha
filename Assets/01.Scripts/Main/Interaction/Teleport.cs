@@ -18,7 +18,7 @@ public class Teleport : MonoBehaviour
 
    private void OnTriggerStay2D(Collider2D collision)
     {
-        print("Dd");
+       // print(this);
         if (collision.tag == "Mary")
         {
             teleportButton.SetActive(true);

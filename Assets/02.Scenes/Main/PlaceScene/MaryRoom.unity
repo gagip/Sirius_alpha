@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1742a8a1b63a14ab00709bb8696fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1272207018}
   adjustX: 0
   adjustY: 0
   moveSpeed: 10
@@ -295,8 +295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94f3e258f8d8344d9f38d89c5457917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSizePlus: 10
-  cameraSizeMinus: 5
+  cameraSizeMin: 5
+  cameraSizeMax: 10
   cameraSpeed: 0.5
   isZoomIn: 0
   isZoomOut: 0
@@ -598,6 +598,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7d6e6f33b6a774d9910b5d884e1a71, type: 3}
+--- !u!1 &1272207018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759167946413664343, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+    type: 3}
+  m_PrefabInstance: {fileID: 869183018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1122748496682233910
 PrefabInstance:
   m_ObjectHideFlags: 0

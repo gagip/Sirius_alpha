@@ -20,7 +20,7 @@ public class TeleportButton : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene("MainHall");
+        SceneManager.LoadScene(moveScene);
         Mary.GetComponent<Transform>().position = movePos;
     }
 
