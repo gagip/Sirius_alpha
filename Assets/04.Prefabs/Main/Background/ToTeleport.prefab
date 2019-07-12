@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3722509619344202772}
   - component: {fileID: 3722509619344202773}
   - component: {fileID: 3722509619344202762}
-  - component: {fileID: 3722509619344202763}
+  - component: {fileID: 6142363541249630766}
   m_Layer: 0
   m_Name: Teleport Button
   m_TagString: Untagged
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3722509619344202763
+--- !u!114 &6142363541249630766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,11 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3722509619344202761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adcb43bc68ff7422f830140e832ac4f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bb2dc5cac6babb41968c053bf409165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveScene: MainHall
-  movePos: {x: 10, y: 10, z: 0}
+  moveScene: 
+  movePos: {x: 0, y: 0, z: 0}
 --- !u!1 &3722509620034117107
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,8 +152,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3722509620034117106}
-  - component: {fileID: 3722509620034117116}
   - component: {fileID: 3722509620034117117}
+  - component: {fileID: 6584916324284870626}
   m_Layer: 0
   m_Name: ToTeleport
   m_TagString: Background
@@ -169,27 +169,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3722509620034117107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.25, y: -3.94, z: 1.0499966}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3722509619344202760}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3722509620034117116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3722509620034117107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9589ad6537c3488dbdd0f25f725e7e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveScene: 
-  movePos: {x: 0, y: 0, z: 0}
 --- !u!61 &3722509620034117117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,3 +202,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.4207783, y: 6.1216125}
   m_EdgeRadius: 0
+--- !u!114 &6584916324284870626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3722509620034117107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7fe80039755d64b80748c7356bac08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

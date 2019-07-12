@@ -7,9 +7,9 @@ public class Teleport : MonoBehaviour
 {
     //public string moveScene;    //이동할 씬
     //public Vector3 movePos;     //이동한 씬에서 캐릭터 위치
-    private GameObject Mary;
-    private GameObject teleportButton;
-    int i = 0;
+    [SerializeField] private GameObject Mary;
+    [SerializeField] private GameObject teleportButton;
+
     void Start()
     {
         Mary = GameObject.FindGameObjectWithTag("Mary");
@@ -18,6 +18,7 @@ public class Teleport : MonoBehaviour
 
    private void OnTriggerStay2D(Collider2D collision)
     {
+        print("Dd");
         if (collision.tag == "Mary")
         {
             teleportButton.SetActive(true);

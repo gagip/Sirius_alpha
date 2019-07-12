@@ -16,7 +16,7 @@ public class DefaultCameraManager : MonoBehaviour
 
     public float adjustX;
     public float adjustY; // 카메라 높이 조절
-    public float moveSpeed; // 카메라 속도
+    public float moveSpeed = 10.0f; // 카메라 속도
     private float halfWidth;
     private float halfHeight;
 
