@@ -30,12 +30,13 @@ public class DialogueSystem : MonoBehaviour
     private string text;
     Coroutine coroutine;
 
-
     // 텍스트 위치에 필요한 변수 
     public bool setTextPosition; // 사용자 정의 위치로 설정
     public DialogueTextPosion dialogueTextPosion;
     Vector3 txtPlayer; // 플레이어 쪽 텍스트 위치
     Vector3 txtNPC; // NPC 쪽 텍스트 위치
+    
+    private AudioManager theAudio;  //사운드 재생
 
     // 카메라 조작에 필요한 변수
     //public DollyZoom cameraCtrl;
@@ -44,7 +45,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Start()
     {
-        if(GameObject.FindWithTag("Mary") != null)
+        if (GameObject.FindWithTag("Mary") != null)
         {
             player = GameObject.FindWithTag("Mary").gameObject;
         }
@@ -55,7 +56,8 @@ public class DialogueSystem : MonoBehaviour
         dialogueBox = dialogueUI.transform.Find("Dialogue Box").GetComponent<Image>();
         txt = dialogueBox.transform.Find("Dialogue Text").GetComponent<Text>();
         panel = dialogueUI.transform.Find("Dialogue Panel").GetComponent<Image>();
- 
+
+        theAudio = FindObjectOfType<AudioManager>();    // 사운드 매니저
     }
 
     private void OnOff(bool _flag)
@@ -79,6 +81,7 @@ public class DialogueSystem : MonoBehaviour
     {
         OnOff(false);
         talking = false;
+        theAudio.Stop("typing");  // sound on
     }
     
     private void NextDialogue()
@@ -98,8 +101,10 @@ public class DialogueSystem : MonoBehaviour
     {
         ChangeText();
         text = (string)dialogueData[count]["dialog"];
+
         if (!allText) //
         {
+            theAudio.Play("typing");  // sound on
             coroutine = StartCoroutine(ShowText(text));
         }
         else
@@ -129,7 +134,7 @@ public class DialogueSystem : MonoBehaviour
             else // 플레이어가 오른쪽에 있을 시
             {
                 txtPlayer = new Vector3(450.0f, 500.0f, 0.0f);
-                txtNPC = new Vector3(450.0f, 500.0f, 0.0f);
+                txtNPC = new Vector3(-450.0f, 500.0f, 0.0f);
             }
         }
     }
@@ -143,6 +148,7 @@ public class DialogueSystem : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.05f);
         }
         allText = true;
+        theAudio.Stop("typing");  // sound on
     }
 
     public void ChangeText()
@@ -196,6 +202,7 @@ public class DialogueSystem : MonoBehaviour
                     StopCoroutine(coroutine);
                     allText = true;
                     PrintText();
+                    theAudio.Stop("typing");  // sound on
                 }
             }
             else // 대화 끝날 시
