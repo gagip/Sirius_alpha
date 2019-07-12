@@ -26,7 +26,7 @@ public class Control : MonoBehaviour
     private AudioManager theAudio;  //사운드 재생
     private bool isPlaying;         // 발자국 소리가 재생중인지
     private Animator animator;   // 애니메이션 동작을 위한 선언  
-    private GameObject dialoguePanel;   // 대화 UI 가 실행중인지 파악하기 위한 변수(setActive 사용해 구별)
+    [SerializeField] private GameObject dialoguePanel;   // 대화 UI 가 실행중인지 파악하기 위한 변수(setActive 사용해 구별)
 
     private void Awake()
     {
@@ -63,6 +63,7 @@ public class Control : MonoBehaviour
     {
         characterBox = gameObject.GetComponent<BoxCollider2D>();
         boundBox = GameObject.FindGameObjectWithTag("Background").GetComponent<BoxCollider2D>();
+        dialoguePanel = GameObject.Find("Dialogue UI").transform.Find("Dialogue Panel").gameObject; // 대화 패널 오브젝트를 받아옴
     }
     
     private void Walk()

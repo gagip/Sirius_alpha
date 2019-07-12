@@ -9,7 +9,6 @@ public class TeleportButton : MonoBehaviour
     public string moveScene;    //이동할 씬
     public Vector3 movePos;     //이동한 씬에서 캐릭터 위치
     private GameObject Mary;
-    private GameObject teleportButton;
     int i = 0;
 
 
@@ -21,7 +20,7 @@ public class TeleportButton : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene("MainHall");
+        SceneManager.LoadScene(moveScene);
         Mary.GetComponent<Transform>().position = movePos;
     }
 

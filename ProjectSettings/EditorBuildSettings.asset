@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02.Scenes/Main/IntroScene/Intro3.unity
     guid: 04995b3ef62210341acd4644915001db
+  - enabled: 1
+    path: Assets/02.Scenes/Main/PlaceScene/MainHall.unity
+    guid: 9071473e3b420db48a7f9649996c7ae9
+  - enabled: 1
+    path: Assets/02.Scenes/Main/PlaceScene/MaryRoom.unity
+    guid: d93009befc5b5f04cb0337ed59b30984
   m_configObjects: {}

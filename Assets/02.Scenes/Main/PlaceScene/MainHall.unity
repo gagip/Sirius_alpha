@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4158587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759167946413664343, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+    type: 3}
+  m_PrefabInstance: {fileID: 2043652071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &68071367
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,11 +315,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainHall
       objectReference: {fileID: 0}
-    - target: {fileID: 832072461960614199, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 8495969663763120040, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,6 +370,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561592025981729407, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: Mary
+      value: 
+      objectReference: {fileID: 4158587}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bdbe7024930c4796a277bf9c1e9afcf, type: 3}
 --- !u!1 &895476032
@@ -445,8 +451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94f3e258f8d8344d9f38d89c5457917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSizePlus: 10
-  cameraSizeMinus: 5
+  cameraSizeMin: 5
+  cameraSizeMax: 10
   cameraSpeed: 0.5
   isZoomIn: 0
   isZoomOut: 0
@@ -737,6 +743,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167948100042675, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167946851834761, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167946819458541, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167947555451157, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167946142771592, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167946833587313, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759167946515403464, guid: 9d7d6e6f33b6a774d9910b5d884e1a71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7d6e6f33b6a774d9910b5d884e1a71, type: 3}
