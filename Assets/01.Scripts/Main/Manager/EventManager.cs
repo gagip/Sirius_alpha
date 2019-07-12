@@ -21,6 +21,10 @@ public class EventManager : MonoBehaviour
         }
     }
 
+    public void CheckEvent()
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {

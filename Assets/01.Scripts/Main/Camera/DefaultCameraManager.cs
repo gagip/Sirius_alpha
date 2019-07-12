@@ -33,6 +33,22 @@ public class DefaultCameraManager : MonoBehaviour
         maxBound = bound.bounds.max;
     }
 
+    private void initCamera()
+    {
+        // 씬에 맞게 자동으로 할당
+        if (target == null && GameObject.FindGameObjectWithTag("Mary") != null)
+            target = GameObject.FindGameObjectWithTag("Mary");
+        if (bound == null && GameObject.FindGameObjectWithTag("Background") != null)
+            bound = GameObject.FindGameObjectWithTag("Background").GetComponent<BoxCollider2D>();
+
+        // 각 변수 초기화
+        zoomCtrl = GetComponent<ZoomInOut>();
+        getCamera = GetComponent<Camera>();
+        minBound = bound.bounds.min;
+        maxBound = bound.bounds.max;
+        halfHeight = getCamera.orthographicSize;
+        halfWidth = halfHeight * Screen.width / Screen.height;
+    }
 
     // Use this for initialization
     void Start()
@@ -48,27 +64,17 @@ public class DefaultCameraManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        // 씬에 맞게 자동으로 할당
-        if (target == null && GameObject.FindGameObjectWithTag("Mary") != null)
-            target = GameObject.FindGameObjectWithTag("Mary");
-        if (bound == null && GameObject.FindGameObjectWithTag("Background") != null)
-            bound = GameObject.FindGameObjectWithTag("Background").GetComponent<BoxCollider2D>();
-
-        // 각 변수 초기화
-        zoomCtrl = GetComponent<ZoomInOut>();
-        getCamera = GetComponent<Camera>();
-        minBound = bound.bounds.min;
-        maxBound = bound.bounds.max;
-        halfHeight = getCamera.orthographicSize;
-        halfWidth = halfHeight * Screen.width / Screen.height;
-
-
+        initCamera();
 
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        initCamera();
+    }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
 
         if (target.gameObject != null)

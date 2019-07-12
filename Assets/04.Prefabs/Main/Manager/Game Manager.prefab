@@ -43,5 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4bcd1f92cea2684e90d5567c737494e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accessibleScene: []
+  accessibleScene:
+  - MaryRoom
+  - MainHall
+  - Hall1
+  - FrontGargen
   player: {fileID: 0}
