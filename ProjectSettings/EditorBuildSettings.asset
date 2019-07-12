@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/02.Scenes/Main/PlaceScene/MaryRoom.unity
     guid: d93009befc5b5f04cb0337ed59b30984
+  - enabled: 1
+    path: Assets/02.Scenes/Main/PlaceScene/FrontGarden.unity
+    guid: 62554aa338f764e6dbc07bf5ac2a1c50
+  - enabled: 1
+    path: Assets/02.Scenes/Main/PlaceScene/Garden1.unity
+    guid: 36251f2b84dd448de830e86e23391a25
+  - enabled: 1
+    path: Assets/02.Scenes/Main/PlaceScene/Hall1.unity
+    guid: cabf40eeac0684c2788922d4a5d8a60a
   m_configObjects: {}

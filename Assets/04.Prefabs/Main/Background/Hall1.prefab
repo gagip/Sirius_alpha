@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5869888045288694714}
   - component: {fileID: 5869888045288694715}
+  - component: {fileID: 14441563925816102}
   m_Layer: 0
   m_Name: Hall1
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1080330899
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9eff9d2826ccd7c4ba0b101203b0761c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -81,6 +82,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &14441563925816102
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869888045288694712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 56.43, y: 10.8}
+    newSize: {x: 56.43, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 56.43, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1001 &5869888045598941701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,6 +119,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToMaryRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509620034117107, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
@@ -106,7 +153,7 @@ PrefabInstance:
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0499966
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
@@ -158,16 +205,57 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 6.125216
       objectReference: {fileID: 0}
-    - target: {fileID: 3722509619344202763, guid: c0c3951c828734714ba9e54c18c1fb05,
+    - target: {fileID: 6584916324284870626, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: teleportButton
+      value: 
+      objectReference: {fileID: 7124425047493639692}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.029237747
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.5667944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.209982
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
       propertyPath: moveScene
       value: MaryRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: movePos.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: movePos.y
+      value: -7.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0c3951c828734714ba9e54c18c1fb05, type: 3}
 --- !u!4 &7124425045503852535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
+    type: 3}
+  m_PrefabInstance: {fileID: 5869888045598941701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7124425047493639692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3722509619344202761, guid: c0c3951c828734714ba9e54c18c1fb05,
     type: 3}
   m_PrefabInstance: {fileID: 5869888045598941701}
   m_PrefabAsset: {fileID: 0}
@@ -183,6 +271,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToMainHall
       objectReference: {fileID: 0}
+    - target: {fileID: 3722509620034117107, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202760, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0499966
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
@@ -238,20 +346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3722509620034117116, guid: c0c3951c828734714ba9e54c18c1fb05,
-        type: 3}
-      propertyPath: moveScene
-      value: MainHall
-      objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117117, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
       propertyPath: m_Offset.x
       value: 2.0199184
-      objectReference: {fileID: 0}
-    - target: {fileID: 3722509620034117117, guid: c0c3951c828734714ba9e54c18c1fb05,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 5.2842216
       objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117117, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
@@ -260,14 +358,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3722509620034117117, guid: c0c3951c828734714ba9e54c18c1fb05,
         type: 3}
+      propertyPath: m_Size.x
+      value: 5.2842216
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509620034117117, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
       propertyPath: m_Size.y
       value: 7.0380583
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584916324284870626, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: teleportButton
+      value: 
+      objectReference: {fileID: 7124425047048793585}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.110588074
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.022116661
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.3176117
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722509619344202772, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.1138363
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: moveScene
+      value: MainHall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: movePos.x
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142363541249630766, guid: c0c3951c828734714ba9e54c18c1fb05,
+        type: 3}
+      propertyPath: movePos.y
+      value: -6.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0c3951c828734714ba9e54c18c1fb05, type: 3}
 --- !u!4 &7124425046086052874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3722509620034117106, guid: c0c3951c828734714ba9e54c18c1fb05,
+    type: 3}
+  m_PrefabInstance: {fileID: 5869888046110962168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7124425047048793585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3722509619344202761, guid: c0c3951c828734714ba9e54c18c1fb05,
     type: 3}
   m_PrefabInstance: {fileID: 5869888046110962168}
   m_PrefabAsset: {fileID: 0}

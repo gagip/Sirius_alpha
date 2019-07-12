@@ -370,11 +370,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5331728390718530215, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2561592025981729407, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
         type: 3}
       propertyPath: Mary
       value: 
       objectReference: {fileID: 4158587}
+    - target: {fileID: 3730251172151531194, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: movePos.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730251172151531194, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: movePos.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730251172151531194, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: moveScene
+      value: FrontGarden
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496244286924694431, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: movePos.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496244286924694431, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: moveScene
+      value: Hall1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496244286924694431, guid: 5bdbe7024930c4796a277bf9c1e9afcf,
+        type: 3}
+      propertyPath: movePos.x
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bdbe7024930c4796a277bf9c1e9afcf, type: 3}
 --- !u!1 &895476032
