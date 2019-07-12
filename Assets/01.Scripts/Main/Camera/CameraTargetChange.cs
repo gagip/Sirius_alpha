@@ -40,7 +40,7 @@ public class CameraTargetChange : MonoBehaviour
             cameraZoom.isZoomOut = true;
             cameraManager.target = temp;
 
-            if (cameraManager.getCamera.orthographicSize > cameraZoom.cameraSizeMinus- 0.01) // 줌아웃이 거의 완료되었을때 카메라 이동속도를 정상화한다
+            if (cameraManager.getCamera.orthographicSize > cameraZoom.cameraSizeMax- 0.01) // 줌아웃이 거의 완료되었을때 카메라 이동속도를 정상화한다
             {
                 cameraManager.moveSpeed = tempSpeed;
             }
