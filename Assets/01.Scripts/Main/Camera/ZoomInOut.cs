@@ -7,8 +7,8 @@ using UnityEngine;
 public class ZoomInOut : MonoBehaviour
 {
     private Camera cameraZoom; // 카메라 오브젝트
-    public float cameraSizePlus; // 카메라 사이즈 조절
-    public float cameraSizeMinus;
+    public float cameraSizePlus = 10.0f; // 카메라 사이즈 조절
+    public float cameraSizeMinus = 5.0f;
     public float cameraSpeed = 0.5f; // 카메라 줌인/아웃 속도
     public bool isZoomIn;
     public bool isZoomOut; // 기본적으로 두개의 bool 값으로 조정 -> 기본 화면에서 더 큰 화면으로 줌아웃 가능 혹은 줌인 장면에서 더 크게 줌인 가능
@@ -17,6 +17,7 @@ public class ZoomInOut : MonoBehaviour
     void Start()
     {
         cameraZoom = GetComponent<Camera>();
+        isZoomOut = true;
     }
 
 
