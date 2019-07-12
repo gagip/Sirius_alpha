@@ -11,6 +11,7 @@ public class NPC : MonoBehaviour
     private Transform button;   //상호작용을 위한 버튼
     public bool isWathcing; // 메리를 쳐다보게 하는 변수
     public bool isMoving;   // 움직이는 NPC
+    public bool isEvent;    // 이벤트 씬에서 사용
 
     public float speed = 3.0f; // NPC 이동 속도
     private Vector3 initpos; // NPC의 초기 위치
@@ -18,7 +19,7 @@ public class NPC : MonoBehaviour
     public float dist = 5.0f;
     private bool direct = true; // NPC의 이동 방향
 
-
+    private AudioManager theAudio;  //사운드 재생
     private Animator animator;   // 애니메이션 동작을 위한 선언  
 
     private void OnTriggerStay2D(Collider2D col)    // mary가 상호작용 가능 범위 일 때
@@ -47,6 +48,8 @@ public class NPC : MonoBehaviour
         initpos.x = transform.position.x;
         targetpos.x = initpos.x + dist;
         animator = gameObject.GetComponent<Animator>(); // animator component를 받아옴
+
+        theAudio = FindObjectOfType<AudioManager>();    // 사운드 매니저
 
         if (isMoving)   // 움직이는 NPC의 경우 움직이도록 초기화
         {
@@ -87,6 +90,18 @@ public class NPC : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
     }
+    
+    public void EventWalk()
+    {
+        animator.SetBool("isEventIdle", false); // Event 애니메이션 실행
+        theAudio.Play("walkingHouse");  // sound on
+    }
+
+    public void EventStop()
+    {
+        animator.SetBool("isEventIdle", true); // idle 애니메이션 실행
+        theAudio.Stop("walkingHouse");  // sound off
+    }
 
     // Update is called once per frame
     void Update()
@@ -104,7 +119,6 @@ public class NPC : MonoBehaviour
 
             Walk();
         }
-        
 
     }
 
